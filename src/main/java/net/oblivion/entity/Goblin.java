@@ -42,10 +42,6 @@ public class Goblin extends HostileEntity {
 
     public static final TagKey<Item> WEAPONS = TagKey.of(RegistryKeys.ITEM, Identifier.of("oblivion", "goblin_weapons"));
 
-    private static TagKey<Item> of(String id) {
-        return TagKey.of(RegistryKeys.ITEM, Identifier.ofVanilla(id));
-    }
-
     public static final TrackedData<Integer> SIZE = DataTracker.registerData(Goblin.class, TrackedDataHandlerRegistry.INTEGER);
     public static final TrackedData<Boolean> DEFENDING = DataTracker.registerData(Goblin.class, TrackedDataHandlerRegistry.BOOLEAN);
 
