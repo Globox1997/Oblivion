@@ -17,12 +17,14 @@ import net.minecraft.item.ItemStack;
 import net.minecraft.item.Items;
 import net.minecraft.nbt.NbtCompound;
 import net.minecraft.registry.Registries;
+import net.minecraft.registry.RegistryKeys;
 import net.minecraft.registry.entry.RegistryEntry;
 import net.minecraft.registry.tag.BlockTags;
 import net.minecraft.registry.tag.DamageTypeTags;
-import net.minecraft.registry.tag.ItemTags;
+import net.minecraft.registry.tag.TagKey;
 import net.minecraft.sound.SoundEvent;
 import net.minecraft.sound.SoundEvents;
+import net.minecraft.util.Identifier;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.Vec3d;
 import net.minecraft.util.math.random.Random;
@@ -37,6 +39,12 @@ import org.jetbrains.annotations.Nullable;
 import java.util.Optional;
 
 public class Goblin extends HostileEntity {
+
+    public static final TagKey<Item> WEAPONS = TagKey.of(RegistryKeys.ITEM, Identifier.of("oblivion", "goblin_weapons"));
+
+    private static TagKey<Item> of(String id) {
+        return TagKey.of(RegistryKeys.ITEM, Identifier.ofVanilla(id));
+    }
 
     public static final TrackedData<Integer> SIZE = DataTracker.registerData(Goblin.class, TrackedDataHandlerRegistry.INTEGER);
     public static final TrackedData<Boolean> DEFENDING = DataTracker.registerData(Goblin.class, TrackedDataHandlerRegistry.BOOLEAN);
@@ -139,7 +147,7 @@ public class Goblin extends HostileEntity {
         this.setSize(this.getRandom().nextInt(3) + 1, true);
         if (this.getRandom().nextFloat() <= 0.5f) {
             this.equipStack(EquipmentSlot.CHEST, new ItemStack(Items.IRON_CHESTPLATE));
-            Optional<RegistryEntry<Item>> optional = Registries.ITEM.getRandomEntry(ItemTags.SWORDS, this.getRandom());
+            Optional<RegistryEntry<Item>> optional = Registries.ITEM.getRandomEntry(WEAPONS, this.getRandom());
             optional.ifPresent(itemRegistryEntry -> this.equipStack(EquipmentSlot.MAINHAND, new ItemStack(itemRegistryEntry)));
             if (this.getRandom().nextFloat() <= 0.5f) {
                 this.equipStack(EquipmentSlot.OFFHAND, new ItemStack(Items.SHIELD));
