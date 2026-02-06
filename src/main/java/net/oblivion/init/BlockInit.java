@@ -137,6 +137,12 @@ public class BlockInit {
     public static BlockEntityType<GuidelightBlockEntity> GUIDELIGHT_BLOCK_ENTITY = Registry.register(Registries.BLOCK_ENTITY_TYPE, OblivionMain.identifierOf("guidelight_entity"),
             BlockEntityType.Builder.create(GuidelightBlockEntity::new, GUIDELIGHT).build(null));
 
+
+    public static final Block OBLIVION_GRASS_BLOCK = register("oblivion_grass_block", -1, true, false, new GrassBlock(AbstractBlock.Settings.create().mapColor(MapColor.EMERALD_GREEN).ticksRandomly().strength(1.2F).sounds(BlockSoundGroup.GRASS).requiresTool()));
+    public static final Block OBLIVION_SHORT_GRASS = register("oblivion_short_grass", -1, true, false, new ShortPlantBlock(AbstractBlock.Settings.create().mapColor(MapColor.EMERALD_GREEN).replaceable().noCollision().breakInstantly().sounds(BlockSoundGroup.GRASS).offset(AbstractBlock.OffsetType.XYZ).burnable().pistonBehavior(PistonBehavior.DESTROY).requiresTool()));
+    public static final Block OBLIVION_TALL_GRASS = register("oblivion_tall_grass", -1, true, false, new TallPlantBlock(AbstractBlock.Settings.create().mapColor(MapColor.EMERALD_GREEN).replaceable().noCollision().breakInstantly().sounds(BlockSoundGroup.GRASS).offset(AbstractBlock.OffsetType.XZ).burnable().pistonBehavior(PistonBehavior.DESTROY).requiresTool()));
+    public static final Block OBLIVION_DIRT = register("oblivion_dirt", -1, true, false, new Block(AbstractBlock.Settings.create().mapColor(MapColor.BROWN).strength(1.0F).sounds(BlockSoundGroup.GRAVEL).requiresTool()));
+
     private static Block register(String id, int woodTag, boolean registerItem, boolean datagenModel, Block block) {
         if (datagenModel) {
             DATAGEN_BLOCKS.add(block);

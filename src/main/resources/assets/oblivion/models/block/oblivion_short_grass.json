@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cross",
+  "textures": {
+    "cross": "oblivion:block/oblivion_short_grass"
+  }
+}

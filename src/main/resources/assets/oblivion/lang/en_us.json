@@ -210,5 +210,10 @@
   "block.oblivion.drill": "Drill",
   "block.oblivion.guidelight": "Guidelight",
 
+  "block.oblivion.oblivion_grass_block": "Oblivion Grass Block",
+  "block.oblivion.oblivion_short_grass": "Oblivion Short Grass",
+  "block.oblivion.oblivion_tall_grass": "Oblivion Tall Grass",
+  "block.oblivion.oblivion_dirt": "Oblivion Dirt",
+
   "block.multi_ore.drill": "You need a stationary drill"
 }

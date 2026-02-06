@@ -1,0 +1,9 @@
+{
+  "parent": "minecraft:block/cube_bottom_top",
+  "textures": {
+    "bottom": "oblivion:block/oblivion_dirt",
+    "particle": "oblivion:block/oblivion_dirt",
+    "side": "oblivion:block/oblivion_grass_block_snow_side",
+    "top": "oblivion:block/oblivion_grass_block_top"
+  }
+}

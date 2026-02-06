@@ -72,10 +72,10 @@
     ],
     [
       "minecraft:glow_lichen",
-      "minecraft:patch_tall_grass_2",
+      "oblivion:patch_oblivion_tall_grass",
       "minecraft:trees_plains",
       "minecraft:flower_plains",
-      "minecraft:patch_grass_plain",
+      "oblivion:patch_oblivion_grass_plains",
       "minecraft:brown_mushroom_normal",
       "minecraft:red_mushroom_normal",
       "minecraft:patch_sugar_cane",

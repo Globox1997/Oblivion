@@ -1,0 +1,21 @@
+{
+  "variants": {
+    "": [
+      {
+        "model": "oblivion:block/oblivion_dirt"
+      },
+      {
+        "model": "oblivion:block/oblivion_dirt",
+        "y": 90
+      },
+      {
+        "model": "oblivion:block/oblivion_dirt",
+        "y": 180
+      },
+      {
+        "model": "oblivion:block/oblivion_dirt",
+        "y": 270
+      }
+    ]
+  }
+}
