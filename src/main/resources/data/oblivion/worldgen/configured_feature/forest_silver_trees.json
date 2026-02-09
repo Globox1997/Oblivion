@@ -5,7 +5,7 @@
     "features": [
       {
         "chance": 0.02,
-        "feature": "minecraft:oak_bees_0002"
+        "feature": "oblivion:silver_birch_trees"
       }
     ]
   }
