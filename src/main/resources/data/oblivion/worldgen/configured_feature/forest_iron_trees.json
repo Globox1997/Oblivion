@@ -1,14 +1,14 @@
 {
   "type": "minecraft:random_selector",
   "config": {
-    "default": "minecraft:oak_bees_0002",
+    "default": "oblivion:oblivion_oak",
     "features": [
       {
-        "chance": 0.01,
+        "chance": 0.005,
         "feature": "oblivion:iron_trees"
       },
       {
-        "chance": 0.005,
+        "chance": 0.002,
         "feature": "oblivion:rune_trees"
       }
     ]

@@ -1,3 +1,4 @@
+
 {
   "type": "minecraft:block",
   "pools": [
@@ -16,7 +17,7 @@
           "offsetY": 1,
           "predicate": {
             "block": {
-              "blocks": "oblivion:oblivion_tall_grass",
+              "blocks": "oblivion:meadow_tall_grass",
               "state": {
                 "half": "upper"
               }
@@ -45,7 +46,7 @@
                   "function": "minecraft:set_count"
                 }
               ],
-              "name": "oblivion:oblivion_short_grass"
+              "name": "oblivion:meadow_short_grass"
             },
             {
               "type": "minecraft:item",
@@ -80,7 +81,7 @@
           "offsetY": -1,
           "predicate": {
             "block": {
-              "blocks": "oblivion:oblivion_tall_grass",
+              "blocks": "oblivion:meadow_tall_grass",
               "state": {
                 "half": "lower"
               }
@@ -109,7 +110,7 @@
                   "function": "minecraft:set_count"
                 }
               ],
-              "name": "oblivion:oblivion_short_grass"
+              "name": "oblivion:meadow_short_grass"
             },
             {
               "type": "minecraft:item",
@@ -130,5 +131,5 @@
       "rolls": 1.0
     }
   ],
-  "random_sequence": "oblivion:blocks/oblivion_tall_grass"
+  "random_sequence": "oblivion:blocks/meadow_tall_grass"
 }

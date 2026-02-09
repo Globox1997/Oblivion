@@ -1,0 +1,89 @@
+{
+  "carvers": {
+    "air": [
+      "minecraft:cave_extra_underground"
+    ]
+  },
+  "downfall": 0.4,
+  "effects": {
+    "fog_color": 12638463,
+    "mood_sound": {
+      "block_search_extent": 8,
+      "offset": 2.0,
+      "sound": "minecraft:ambient.cave",
+      "tick_delay": 6000
+    },
+    "sky_color": 7907327,
+    "water_color": 4159204,
+    "water_fog_color": 329011
+  },
+  "features": [
+    [],
+    [],
+    [],
+    [
+      "oblivion:oblivion_monster_room"
+    ],
+    [],
+    [],
+    [
+      "oblivion:oblivion_ore_coal",
+      "oblivion:oblivion_ore_iron",
+      "oblivion:oblivion_ore_gold",
+      "oblivion:oblivion_ore_redstone",
+      "oblivion:oblivion_ore_diamond",
+      "oblivion:oblivion_ore_lapis",
+      "oblivion:oblivion_ore_copper",
+      "oblivion:oblivion_ore_emerald",
+      "oblivion:scarlet_ore"
+    ],
+    [],
+    [],
+    [
+      "oblivion:patch_meadow_tall_grass",
+      "oblivion:patch_meadow_grass_plains"
+    ],
+    [
+      "minecraft:freeze_top_layer"
+    ]
+  ],
+  "has_precipitation": true,
+  "spawn_costs": {},
+  "spawners": {
+    "ambient": [],
+    "axolotls": [],
+    "creature": [
+      {
+        "type": "oblivion:shlama",
+        "maxCount": 4,
+        "minCount": 4,
+        "weight": 12
+      },
+      {
+        "type": "oblivion:boar",
+        "maxCount": 4,
+        "minCount": 4,
+        "weight": 10
+      },
+      {
+        "type": "oblivion:turkey",
+        "maxCount": 6,
+        "minCount": 2,
+        "weight": 5
+      }
+    ],
+    "misc": [],
+    "monster": [],
+    "underground_water_creature": [
+      {
+        "type": "minecraft:glow_squid",
+        "maxCount": 6,
+        "minCount": 4,
+        "weight": 10
+      }
+    ],
+    "water_ambient": [],
+    "water_creature": []
+  },
+  "temperature": 0.8
+}

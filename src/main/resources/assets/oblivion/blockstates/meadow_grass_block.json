@@ -1,0 +1,24 @@
+{
+  "variants": {
+    "snowy=false": [
+      {
+        "model": "oblivion:block/meadow_grass_block"
+      },
+      {
+        "model": "oblivion:block/meadow_grass_block",
+        "y": 90
+      },
+      {
+        "model": "oblivion:block/meadow_grass_block",
+        "y": 180
+      },
+      {
+        "model": "oblivion:block/meadow_grass_block",
+        "y": 270
+      }
+    ],
+    "snowy=true": {
+      "model": "oblivion:block/meadow_grass_block_snow"
+    }
+  }
+}

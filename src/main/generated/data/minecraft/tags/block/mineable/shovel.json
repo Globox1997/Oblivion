@@ -2,6 +2,7 @@
   "values": [
     "oblivion:quicksand",
     "oblivion:oblivion_grass_block",
-    "oblivion:oblivion_dirt"
+    "oblivion:oblivion_dirt",
+    "oblivion:meadow_grass_block"
   ]
 }

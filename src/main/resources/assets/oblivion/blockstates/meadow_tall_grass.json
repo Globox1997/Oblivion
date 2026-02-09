@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "half=lower": {
+      "model": "oblivion:block/meadow_tall_grass_bottom"
+    },
+    "half=upper": {
+      "model": "oblivion:block/meadow_tall_grass_top"
+    }
+  }
+}

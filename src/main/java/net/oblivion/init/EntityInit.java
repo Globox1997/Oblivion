@@ -52,7 +52,7 @@ public class EntityInit {
     public static void init() {
         SpawnRestriction.register(EntityInit.SHLAMA, SpawnLocationTypes.ON_GROUND, Heightmap.Type.MOTION_BLOCKING_NO_LEAVES, AnimalEntity::isValidNaturalSpawn);
         SpawnRestriction.register(EntityInit.ELYSIAN_ELK, SpawnLocationTypes.ON_GROUND, Heightmap.Type.MOTION_BLOCKING_NO_LEAVES, ElysianElk::canSpawnInDark);
-        SpawnRestriction.register(EntityInit.ELYSIAN_SHAMAN, SpawnLocationTypes.ON_GROUND, Heightmap.Type.MOTION_BLOCKING_NO_LEAVES, HostileEntity::canSpawnInDark);
+        SpawnRestriction.register(EntityInit.ELYSIAN_SHAMAN, SpawnLocationTypes.ON_GROUND, Heightmap.Type.MOTION_BLOCKING_NO_LEAVES, ElysianShaman::canSpawn);
         SpawnRestriction.register(EntityInit.ELYSIAN_WOLF, SpawnLocationTypes.ON_GROUND, Heightmap.Type.MOTION_BLOCKING_NO_LEAVES, HostileEntity::canSpawnInDark);
         SpawnRestriction.register(EntityInit.GOBLIN, SpawnLocationTypes.ON_GROUND, Heightmap.Type.MOTION_BLOCKING_NO_LEAVES, Goblin::isValidNaturalSpawn);
         SpawnRestriction.register(EntityInit.TREEDER, SpawnLocationTypes.ON_GROUND, Heightmap.Type.MOTION_BLOCKING_NO_LEAVES, Treeder::isValidNaturalSpawn);

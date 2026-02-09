@@ -64,10 +64,17 @@ public class TagLoader {
             shovelMineable.add(BlockInit.QUICKSAND);
             shovelMineable.add(BlockInit.OBLIVION_GRASS_BLOCK);
             shovelMineable.add(BlockInit.OBLIVION_DIRT);
+            shovelMineable.add(BlockInit.MEADOW_GRASS_BLOCK);
 
             FabricTagBuilder dirt = getOrCreateTagBuilder(BlockTags.DIRT);
             dirt.add(BlockInit.OBLIVION_GRASS_BLOCK);
             dirt.add(BlockInit.OBLIVION_DIRT);
+            dirt.add(BlockInit.MEADOW_GRASS_BLOCK);
+
+            FabricTagBuilder animalsSpawnableOn = getOrCreateTagBuilder(BlockTags.ANIMALS_SPAWNABLE_ON);
+            animalsSpawnableOn.add(BlockInit.OBLIVION_GRASS_BLOCK);
+            animalsSpawnableOn.add(BlockInit.OBLIVION_DIRT);
+            animalsSpawnableOn.add(BlockInit.MEADOW_GRASS_BLOCK);
         }
     }
 

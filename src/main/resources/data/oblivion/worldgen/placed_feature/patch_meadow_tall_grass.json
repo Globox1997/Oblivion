@@ -1,5 +1,5 @@
 {
-  "feature": "oblivion:patch_oblivion_tall_grass",
+  "feature": "oblivion:patch_meadow_tall_grass",
   "placement": [
     {
       "type": "minecraft:noise_threshold_count",
@@ -9,7 +9,7 @@
     },
     {
       "type": "minecraft:rarity_filter",
-      "chance": 48
+      "chance": 64
     },
     {
       "type": "minecraft:in_square"

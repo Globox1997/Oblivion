@@ -8,10 +8,7 @@
           "to_place": {
             "type": "minecraft:simple_state_provider",
             "state": {
-              "Name": "oblivion:oblivion_tall_grass",
-              "Properties": {
-                "half": "lower"
-              }
+              "Name": "oblivion:meadow_short_grass"
             }
           }
         }
@@ -26,8 +23,8 @@
         }
       ]
     },
-    "tries": 96,
-    "xz_spread": 8,
+    "tries": 32,
+    "xz_spread": 7,
     "y_spread": 3
   }
 }

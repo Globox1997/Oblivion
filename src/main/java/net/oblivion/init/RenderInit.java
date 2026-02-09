@@ -67,6 +67,8 @@ public class RenderInit {
 
         BlockRenderLayerMap.INSTANCE.putBlock(BlockInit.OBLIVION_SHORT_GRASS, RenderLayer.getCutout());
         BlockRenderLayerMap.INSTANCE.putBlock(BlockInit.OBLIVION_TALL_GRASS, RenderLayer.getCutout());
+        BlockRenderLayerMap.INSTANCE.putBlock(BlockInit.MEADOW_SHORT_GRASS, RenderLayer.getCutout());
+        BlockRenderLayerMap.INSTANCE.putBlock(BlockInit.MEADOW_TALL_GRASS, RenderLayer.getCutout());
 
         // Entity Renderer
         EntityRendererRegistry.register(EntityInit.SHLAMA, ShlamaRenderer::new);
