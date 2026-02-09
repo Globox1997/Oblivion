@@ -11,11 +11,9 @@ public record OblivionOreFeatureConfig(BlockStateProvider blockStateProvider, in
 
     public static final Codec<OblivionOreFeatureConfig> CODEC = RecordCodecBuilder.create(
             instance -> instance.group(
-                            BlockStateProvider.TYPE_CODEC.fieldOf("state_provider").forGetter(OblivionOreFeatureConfig::blockStateProvider),
-                            Codecs.NONNEGATIVE_INT.fieldOf("size").orElse(2).forGetter(OblivionOreFeatureConfig::size),
-                            RuleTest.TYPE_CODEC.fieldOf("target").forGetter(target -> target.target)
-                    )
-                    .apply(instance, OblivionOreFeatureConfig::new)
-    );
+                    BlockStateProvider.TYPE_CODEC.fieldOf("state_provider").forGetter(OblivionOreFeatureConfig::blockStateProvider),
+                    Codecs.NONNEGATIVE_INT.fieldOf("size").orElse(2).forGetter(OblivionOreFeatureConfig::size),
+                    RuleTest.TYPE_CODEC.fieldOf("target").forGetter(target -> target.target)
+            ).apply(instance, OblivionOreFeatureConfig::new));
 
 }

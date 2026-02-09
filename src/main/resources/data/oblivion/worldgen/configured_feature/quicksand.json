@@ -14,7 +14,9 @@
     "valid_blocks": [
       "minecraft:stone",
       "minecraft:dirt",
-      "minecraft:grass_block"
+      "minecraft:grass_block",
+      "oblivion:oblivion_dirt",
+      "oblivion:oblivion_grass_block"
     ]
   }
 }

@@ -26,6 +26,8 @@ public class WorldInit {
 
     public static final Feature<DefaultFeatureConfig> GUIDELIGHT = register("guidelight", new GuidelightFeature(DefaultFeatureConfig.CODEC));
 
+    public static final Feature<DefaultFeatureConfig> OBLIVION_MONSTER_ROOM = register("oblivion_monster_room", new OblivionDungeonFeature(DefaultFeatureConfig.CODEC));
+
     private static <P extends FoliagePlacer> FoliagePlacerType<P> register(String id, MapCodec<P> codec) {
         return Registry.register(Registries.FOLIAGE_PLACER_TYPE, id, new FoliagePlacerType<>(codec));
     }

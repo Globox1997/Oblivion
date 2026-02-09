@@ -1,5 +1,7 @@
 {
   "values": [
-    "oblivion:quicksand"
+    "oblivion:quicksand",
+    "oblivion:oblivion_grass_block",
+    "oblivion:oblivion_dirt"
   ]
 }

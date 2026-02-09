@@ -214,6 +214,18 @@
   "block.oblivion.oblivion_short_grass": "Oblivion Short Grass",
   "block.oblivion.oblivion_tall_grass": "Oblivion Tall Grass",
   "block.oblivion.oblivion_dirt": "Oblivion Dirt",
+  "block.oblivion.oblivion_stone": "Oblivion Stone",
+  "block.oblivion.oblivion_cobbled_stone": "Oblivion Cobbled Stone",
+  "block.oblivion.oblivion_mossy_cobbled_stone": "Oblivion Mossy Cobbled Stone",
+
+  "block.oblivion.oblivion_stone_coal_ore": "Oblivion Stone Coal Ore",
+  "block.oblivion.oblivion_stone_diamond_ore": "Oblivion Stone Diamond Ore",
+  "block.oblivion.oblivion_stone_copper_ore": "Oblivion Stone Copper Ore",
+  "block.oblivion.oblivion_stone_iron_ore": "Oblivion Stone Iron Ore",
+  "block.oblivion.oblivion_stone_emerald_ore": "Oblivion Stone Emerald Ore",
+  "block.oblivion.oblivion_stone_lapis_ore": "Oblivion Stone Lapis Ore",
+  "block.oblivion.oblivion_stone_gold_ore": "Oblivion Stone Gold Ore",
+  "block.oblivion.oblivion_stone_redstone_ore": "Oblivion Stone Redstone Ore",
 
   "block.multi_ore.drill": "You need a stationary drill"
 }

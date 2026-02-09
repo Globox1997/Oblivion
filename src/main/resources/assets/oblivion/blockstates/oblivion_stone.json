@@ -1,0 +1,62 @@
+{
+  "variants": {
+    "axis=x": [
+      {
+        "model": "oblivion:block/oblivion_stone",
+        "x": 90,
+        "y": 90
+      },
+      {
+        "model": "oblivion:block/oblivion_stone_mirrored",
+        "x": 90,
+        "y": 90
+      },
+      {
+        "model": "oblivion:block/oblivion_stone",
+        "x": 90,
+        "y": 90
+      },
+      {
+        "model": "oblivion:block/oblivion_stone_mirrored",
+        "x": 90,
+        "y": 90
+      }
+    ],
+    "axis=y": [
+      {
+        "model": "oblivion:block/oblivion_stone"
+      },
+      {
+        "model": "oblivion:block/oblivion_stone_mirrored"
+      },
+      {
+        "model": "oblivion:block/oblivion_stone",
+        "y": 180
+      },
+      {
+        "model": "oblivion:block/oblivion_stone_mirrored",
+        "y": 180
+      }
+    ],
+    "axis=z": [
+      {
+        "model": "oblivion:block/oblivion_stone",
+        "x": 90
+      },
+      {
+        "model": "oblivion:block/oblivion_stone_mirrored",
+        "x": 90
+      },
+      {
+        "model": "oblivion:block/oblivion_stone",
+        "x": 90,
+        "y": 180
+      },
+      {
+        "model": "oblivion:block/oblivion_stone_mirrored",
+        "x": 90,
+        "y": 180
+      }
+    ]
+  }
+}

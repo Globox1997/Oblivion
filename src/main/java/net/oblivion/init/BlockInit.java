@@ -16,6 +16,7 @@ import net.minecraft.registry.Registry;
 import net.minecraft.sound.BlockSoundGroup;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.math.Direction;
+import net.minecraft.util.math.intprovider.ConstantIntProvider;
 import net.minecraft.world.gen.feature.ConfiguredFeatures;
 import net.oblivion.OblivionMain;
 import net.oblivion.block.*;
@@ -142,6 +143,26 @@ public class BlockInit {
     public static final Block OBLIVION_SHORT_GRASS = register("oblivion_short_grass", -1, true, false, new ShortPlantBlock(AbstractBlock.Settings.create().mapColor(MapColor.EMERALD_GREEN).replaceable().noCollision().breakInstantly().sounds(BlockSoundGroup.GRASS).offset(AbstractBlock.OffsetType.XYZ).burnable().pistonBehavior(PistonBehavior.DESTROY).requiresTool()));
     public static final Block OBLIVION_TALL_GRASS = register("oblivion_tall_grass", -1, true, false, new TallPlantBlock(AbstractBlock.Settings.create().mapColor(MapColor.EMERALD_GREEN).replaceable().noCollision().breakInstantly().sounds(BlockSoundGroup.GRASS).offset(AbstractBlock.OffsetType.XZ).burnable().pistonBehavior(PistonBehavior.DESTROY).requiresTool()));
     public static final Block OBLIVION_DIRT = register("oblivion_dirt", -1, true, false, new Block(AbstractBlock.Settings.create().mapColor(MapColor.BROWN).strength(1.0F).sounds(BlockSoundGroup.GRAVEL).requiresTool()));
+
+    public static final Block OBLIVION_STONE = register("oblivion_stone", -1, true, false, new PillarBlock(AbstractBlock.Settings.create().mapColor(MapColor.GRAY).strength(3F,12.0F).instrument(NoteBlockInstrument.BASEDRUM).sounds(BlockSoundGroup.DEEPSLATE).requiresTool()));
+    public static final Block OBLIVION_COBBLED_STONE = register("oblivion_cobbled_stone", -1, true, false, new Block(AbstractBlock.Settings.create().mapColor(MapColor.GRAY).strength(4F,12.0F).instrument(NoteBlockInstrument.BASEDRUM).sounds(BlockSoundGroup.DEEPSLATE).requiresTool()));
+    public static final Block OBLIVION_MOSSY_COBBLED_STONE = register("oblivion_mossy_cobbled_stone", -1, true, false, new Block(AbstractBlock.Settings.create().mapColor(MapColor.GRAY).strength(4F,12.0F).instrument(NoteBlockInstrument.BASEDRUM).sounds(BlockSoundGroup.DEEPSLATE).requiresTool()));
+
+    public static final Block OBLIVION_STONE_COAL_ORE = register("oblivion_stone_coal_ore", -1, true, false, new ExperienceDroppingBlock(
+			ConstantIntProvider.create(0), (AbstractBlock.Settings.create().mapColor(MapColor.GRAY).strength(9F,12.0F).instrument(NoteBlockInstrument.BASEDRUM).sounds(BlockSoundGroup.DEEPSLATE).requiresTool())));
+    public static final Block OBLIVION_STONE_DIAMOND_ORE = register("oblivion_stone_diamond_ore", -1, true, false, new ExperienceDroppingBlock(
+			ConstantIntProvider.create(0), (AbstractBlock.Settings.create().mapColor(MapColor.GRAY).strength(9F,12.0F).instrument(NoteBlockInstrument.BASEDRUM).sounds(BlockSoundGroup.DEEPSLATE).requiresTool())));
+    public static final Block OBLIVION_STONE_COPPER_ORE = register("oblivion_stone_copper_ore", -1, true, false, new ExperienceDroppingBlock(
+			ConstantIntProvider.create(0), (AbstractBlock.Settings.create().mapColor(MapColor.GRAY).strength(9F,12.0F).instrument(NoteBlockInstrument.BASEDRUM).sounds(BlockSoundGroup.DEEPSLATE).requiresTool())));
+    public static final Block OBLIVION_STONE_IRON_ORE = register("oblivion_stone_iron_ore", -1, true, false, new ExperienceDroppingBlock(
+            ConstantIntProvider.create(0), (AbstractBlock.Settings.create().mapColor(MapColor.GRAY).strength(9F,12.0F).instrument(NoteBlockInstrument.BASEDRUM).sounds(BlockSoundGroup.DEEPSLATE).requiresTool())));
+    public static final Block OBLIVION_STONE_EMERALD_ORE = register("oblivion_stone_emerald_ore", -1, true, false, new ExperienceDroppingBlock(
+            ConstantIntProvider.create(0), (AbstractBlock.Settings.create().mapColor(MapColor.GRAY).strength(9F,12.0F).instrument(NoteBlockInstrument.BASEDRUM).sounds(BlockSoundGroup.DEEPSLATE).requiresTool())));
+    public static final Block OBLIVION_STONE_LAPIS_ORE = register("oblivion_stone_lapis_ore", -1, true, false, new ExperienceDroppingBlock(
+            ConstantIntProvider.create(0), (AbstractBlock.Settings.create().mapColor(MapColor.GRAY).strength(9F,12.0F).instrument(NoteBlockInstrument.BASEDRUM).sounds(BlockSoundGroup.DEEPSLATE).requiresTool())));
+    public static final Block OBLIVION_STONE_GOLD_ORE = register("oblivion_stone_gold_ore", -1, true, false, new ExperienceDroppingBlock(
+            ConstantIntProvider.create(0), (AbstractBlock.Settings.create().mapColor(MapColor.GRAY).strength(9F,12.0F).instrument(NoteBlockInstrument.BASEDRUM).sounds(BlockSoundGroup.DEEPSLATE).requiresTool())));
+    public static final Block OBLIVION_STONE_REDSTONE_ORE = register("oblivion_stone_redstone_ore", -1, true, false, new RedstoneOreBlock((AbstractBlock.Settings.create().mapColor(MapColor.GRAY).strength(9F,12.0F).instrument(NoteBlockInstrument.BASEDRUM).sounds(BlockSoundGroup.DEEPSLATE).requiresTool())));
 
     private static Block register(String id, int woodTag, boolean registerItem, boolean datagenModel, Block block) {
         if (datagenModel) {

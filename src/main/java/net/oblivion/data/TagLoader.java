@@ -48,8 +48,26 @@ public class TagLoader {
             pickaxeMineable.add(BlockInit.SOLARITE_BLOCK);
             pickaxeMineable.add(BlockInit.RAW_SOLARITE_BLOCK);
 
+            pickaxeMineable.add(BlockInit.OBLIVION_STONE);
+            pickaxeMineable.add(BlockInit.OBLIVION_COBBLED_STONE);
+            pickaxeMineable.add(BlockInit.OBLIVION_MOSSY_COBBLED_STONE);
+            pickaxeMineable.add(BlockInit.OBLIVION_STONE_COAL_ORE);
+            pickaxeMineable.add(BlockInit.OBLIVION_STONE_DIAMOND_ORE);
+            pickaxeMineable.add(BlockInit.OBLIVION_STONE_COPPER_ORE);
+            pickaxeMineable.add(BlockInit.OBLIVION_STONE_IRON_ORE);
+            pickaxeMineable.add(BlockInit.OBLIVION_STONE_EMERALD_ORE);
+            pickaxeMineable.add(BlockInit.OBLIVION_STONE_LAPIS_ORE);
+            pickaxeMineable.add(BlockInit.OBLIVION_STONE_GOLD_ORE);
+            pickaxeMineable.add(BlockInit.OBLIVION_STONE_REDSTONE_ORE);
+
             FabricTagBuilder shovelMineable = getOrCreateTagBuilder(BlockTags.SHOVEL_MINEABLE);
             shovelMineable.add(BlockInit.QUICKSAND);
+            shovelMineable.add(BlockInit.OBLIVION_GRASS_BLOCK);
+            shovelMineable.add(BlockInit.OBLIVION_DIRT);
+
+            FabricTagBuilder dirt = getOrCreateTagBuilder(BlockTags.DIRT);
+            dirt.add(BlockInit.OBLIVION_GRASS_BLOCK);
+            dirt.add(BlockInit.OBLIVION_DIRT);
         }
     }
 

@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column",
+  "textures": {
+    "end": "oblivion:block/oblivion_stone_top",
+    "side": "oblivion:block/oblivion_stone"
+  }
+}

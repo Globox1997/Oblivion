@@ -2,6 +2,7 @@
   "type": "oblivion:oblivion_ore",
   "config": {
     "size": 2,
+    "discard_chance_on_air_exposure": 1.0,
     "state_provider": {
       "type": "minecraft:simple_state_provider",
       "state": {
@@ -10,7 +11,7 @@
     },
     "target": {
       "predicate_type": "minecraft:tag_match",
-      "tag": "minecraft:stone_ore_replaceables"
+      "tag": "oblivion:oblivion_stone_ore_replaceables"
     }
   }
 }

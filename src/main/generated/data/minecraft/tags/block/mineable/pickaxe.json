@@ -6,6 +6,17 @@
     "oblivion:scarlet_block",
     "oblivion:raw_scarlet_block",
     "oblivion:solarite_block",
-    "oblivion:raw_solarite_block"
+    "oblivion:raw_solarite_block",
+    "oblivion:oblivion_stone",
+    "oblivion:oblivion_cobbled_stone",
+    "oblivion:oblivion_mossy_cobbled_stone",
+    "oblivion:oblivion_stone_coal_ore",
+    "oblivion:oblivion_stone_diamond_ore",
+    "oblivion:oblivion_stone_copper_ore",
+    "oblivion:oblivion_stone_iron_ore",
+    "oblivion:oblivion_stone_emerald_ore",
+    "oblivion:oblivion_stone_lapis_ore",
+    "oblivion:oblivion_stone_gold_ore",
+    "oblivion:oblivion_stone_redstone_ore"
   ]
 }
