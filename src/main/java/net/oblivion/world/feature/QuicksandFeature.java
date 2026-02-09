@@ -37,10 +37,14 @@ public class QuicksandFeature extends Feature<QuicksandFeatureConfig> {
                         continue;
                     }
                     BlockState state = quicksandFeatureConfig.stateProvider.get(structureWorldAccess.getRandom(), pos);
-                    if (state.isOf(BlockInit.QUICKSAND) && structureWorldAccess.getBlockState(pos.up()).isOf(BlockInit.QUICKSAND)) {
+                    if (!structureWorldAccess.getBlockState(pos.up()).isAir()) {
                         state = state.with(Properties.BOTTOM, true);
                     }
                     structureWorldAccess.setBlockState(pos, state, Block.NOTIFY_LISTENERS);
+
+                    if (structureWorldAccess.getBlockState(pos.down()).isOf(BlockInit.QUICKSAND)) {
+                        structureWorldAccess.setBlockState(pos.down(), structureWorldAccess.getBlockState(pos.down()).with(Properties.BOTTOM, true), Block.NOTIFY_LISTENERS);
+                    }
                 }
 
                 return true;
