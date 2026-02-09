@@ -20,13 +20,14 @@ import net.minecraft.world.gen.feature.DefaultFeatureConfig;
 import net.minecraft.world.gen.feature.Feature;
 import net.minecraft.world.gen.feature.util.FeatureContext;
 import net.oblivion.init.BlockInit;
+import net.oblivion.init.EntityInit;
 import org.slf4j.Logger;
 
 import java.util.function.Predicate;
 
 public class OblivionDungeonFeature extends Feature<DefaultFeatureConfig> {
     private static final Logger LOGGER = LogUtils.getLogger();
-    private static final EntityType<?>[] MOB_SPAWNER_ENTITIES = new EntityType[]{EntityType.SKELETON, EntityType.ZOMBIE, EntityType.ZOMBIE, EntityType.SPIDER};
+    private static final EntityType<?>[] MOB_SPAWNER_ENTITIES = new EntityType[]{EntityInit.SKELETAL};
     private static final BlockState AIR = Blocks.CAVE_AIR.getDefaultState();
 
     public OblivionDungeonFeature(Codec<DefaultFeatureConfig> codec) {
@@ -39,10 +40,10 @@ public class OblivionDungeonFeature extends Feature<DefaultFeatureConfig> {
         BlockPos blockPos = context.getOrigin();
         Random random = context.getRandom();
         StructureWorldAccess structureWorldAccess = context.getWorld();
-        int j = random.nextInt(2) + 3;
+        int j = random.nextInt(2) + 4;
         int k = -j - 1;
         int l = j + 1;
-        int o = random.nextInt(2) + 3;
+        int o = random.nextInt(2) + 4;
         int p = -o - 1;
         int q = o + 1;
         int r = 0;
@@ -56,7 +57,7 @@ public class OblivionDungeonFeature extends Feature<DefaultFeatureConfig> {
                         return false;
                     }
 
-                    if (t == 4 && !bl) {
+                    if (t == 5 && !bl) {
                         return false;
                     }
 

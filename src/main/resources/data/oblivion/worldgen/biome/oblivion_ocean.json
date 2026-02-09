@@ -94,6 +94,12 @@
         "maxCount": 1,
         "minCount": 1,
         "weight": 5
+      },
+      {
+        "type": "oblivion:skeletal",
+        "maxCount": 4,
+        "minCount": 4,
+        "weight": 100
       }
     ],
     "underground_water_creature": [

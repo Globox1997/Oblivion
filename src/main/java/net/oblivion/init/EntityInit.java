@@ -35,6 +35,7 @@ public class EntityInit {
     public static final EntityType<WoolyCow> WOOLY_COW = register("wooly_cow", 13926720, 16767926, WoolyCow.createWoolyCowAttributes(), EntityType.Builder.create(WoolyCow::new, SpawnGroup.CREATURE).dimensions(0.9F, 1.4F).eyeHeight(1.3F).passengerAttachments(1.36875F).build());
     public static final EntityType<Piranha> PIRANHA = register("piranha", 3430802, 16035176, Piranha.createPiranhaAttributes(), EntityType.Builder.create(Piranha::new, SpawnGroup.WATER_AMBIENT).dimensions(0.5F, 0.4F).build());
     public static final EntityType<HornedSheep> HORNED_SHEEP = register("horned_sheep", 14606046, 5915187, HornedSheep.createHornedSheepAttributes(), EntityType.Builder.create(HornedSheep::new, SpawnGroup.CREATURE).dimensions(0.9F, 1.3F).eyeHeight(1.235F).passengerAttachments(1.2375F).build());
+    public static final EntityType<Skeletal> SKELETAL = register("skeletal", 8355711, 5329233, Skeletal.createSkeletalAttributes(), EntityType.Builder.create(Skeletal::new, SpawnGroup.MONSTER).dimensions(0.72F, 2.4F).build());
 
     @SuppressWarnings("unchecked")
     private static <T extends Entity> EntityType<T> register(String id, int primaryColor, int secondaryColor, DefaultAttributeContainer.Builder builder, EntityType<T> entityType) {
@@ -63,6 +64,7 @@ public class EntityInit {
         SpawnRestriction.register(EntityInit.WOOLY_COW, SpawnLocationTypes.ON_GROUND, Heightmap.Type.MOTION_BLOCKING_NO_LEAVES, AnimalEntity::isValidNaturalSpawn);
         SpawnRestriction.register(EntityInit.PIRANHA, SpawnLocationTypes.IN_WATER, Heightmap.Type.MOTION_BLOCKING_NO_LEAVES, Piranha::canPiranhaSpawn);
         SpawnRestriction.register(EntityInit.HORNED_SHEEP, SpawnLocationTypes.ON_GROUND, Heightmap.Type.MOTION_BLOCKING_NO_LEAVES, AnimalEntity::isValidNaturalSpawn);
+        SpawnRestriction.register(EntityInit.SKELETAL, SpawnLocationTypes.ON_GROUND, Heightmap.Type.MOTION_BLOCKING_NO_LEAVES, Skeletal::canSpawn);
     }
 
 }

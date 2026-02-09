@@ -14,6 +14,7 @@
   "entity.oblivion.wooly_cow": "Wooly Cow",
   "entity.oblivion.piranha": "Piranha",
   "entity.oblivion.horned_sheep": "Horned Sheep",
+  "entity.oblivion.skeletal": "Skeletal",
 
   "item.oblivion.spawn_shlama": "Shlama Spawn Egg",
   "item.oblivion.spawn_elysian_elk": "Elysian Elk Spawn Egg",
@@ -28,6 +29,7 @@
   "item.oblivion.spawn_wooly_cow": "Wooly Cow Spawn Egg",
   "item.oblivion.spawn_piranha": "Piranha Spawn Egg",
   "item.oblivion.spawn_horned_sheep": "Horned Sheep Spawn Egg",
+  "item.oblivion.spawn_skeletal": "Skeletal",
 
   "item.oblivion.shlamb": "Shlamb",
   "item.oblivion.cooked_shlamb": "Cooked Shlamb",
