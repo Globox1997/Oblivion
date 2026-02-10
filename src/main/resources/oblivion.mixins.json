@@ -10,6 +10,7 @@
     "client.BuiltinModelItemRendererMixin",
     "client.ClientPlayerEntityMixin",
     "client.InGameOverlayRendererMixin",
+    "client.IntegratedServerLoaderMixin",
     "client.QuadrupedEntityModelAccess",
     "client.WorldRenderMixin"
   ],
