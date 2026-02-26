@@ -22,7 +22,11 @@ public class ServerPlayerEntityMixin implements ServerPlayerEntityAccess {
     @Inject(method = "readCustomDataFromNbt", at = @At("TAIL"))
     private void readCustomDataFromNbtMixin(NbtCompound nbt, CallbackInfo info) {
         int[] guidelightPos = nbt.getIntArray("GuidelightPos");
-        this.guidelightBlockPos = new BlockPos(guidelightPos[0], guidelightPos[1], guidelightPos[2]);
+        if (guidelightPos.length >= 3) {
+            this.guidelightBlockPos = new BlockPos(guidelightPos[0], guidelightPos[1], guidelightPos[2]);
+        } else {
+            this.guidelightBlockPos = BlockPos.ORIGIN;
+        }
     }
 
     @Inject(method = "writeCustomDataToNbt", at = @At("TAIL"))
