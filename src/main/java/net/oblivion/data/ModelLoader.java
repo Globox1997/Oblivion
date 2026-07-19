@@ -29,6 +29,7 @@ public class ModelLoader extends FabricModelProvider {
         Identifier identifier = blockStateModelGenerator.createSubModel(BlockInit.SHIMMERING_GRASS, "", Models.CROSS, TextureMap::cross);
         Identifier identifier2 = blockStateModelGenerator.createSubModel(BlockInit.SHIMMERING_GRASS, "_lit", Models.CROSS, TextureMap::cross);
         blockStateModelGenerator.blockStateCollector.accept(VariantsBlockStateSupplier.create(BlockInit.SHIMMERING_GRASS).coordinate(BlockStateModelGenerator.createBooleanModelMap(Properties.LIT, identifier2, identifier)));
+        blockStateModelGenerator.registerItemModel(BlockInit.SHIMMERING_GRASS);
     }
 
     @Override
@@ -39,6 +40,8 @@ public class ModelLoader extends FabricModelProvider {
         for (int i = 0; i < ItemInit.TOOLS.size(); i++) {
             itemModelGenerator.register(ItemInit.TOOLS.get(i), Models.HANDHELD);
         }
+//        model.upload(ModelIds.getItemModelId(item), TextureMap.layer0(item), this.writer);
+//        itemModelGenerator.register(BlockInit.SHIMMERING_GRASS.asItem(),"block", Models.GENERATED);
     }
 }
 
