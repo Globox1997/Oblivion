@@ -41,12 +41,6 @@ public class MultiOreBlock extends BlockWithEntity {
         return BlockRenderType.MODEL;
     }
 
-    // @Override
-    // public BlockState onBreak(World world, BlockPos pos, BlockState state, PlayerEntity player) {
-    //     breakMultiOre(world, pos, player);
-    //     return super.onBreak(world, pos, state, player);
-    // }
-
     public void breakMultiOre(World world, BlockPos pos, @Nullable PlayerEntity player) {
         if (!world.isClient()) {
             for (BlockPos blockPos : getMultiOreBlockPoses(world, pos)) {
@@ -56,44 +50,35 @@ public class MultiOreBlock extends BlockWithEntity {
     }
 
     public List<BlockPos> getMultiOreBlockPoses(World world, BlockPos startPos) {
-        Set<BlockPos> visited = new HashSet<>();  // Use a set for fast lookup
+        Set<BlockPos> visited = new HashSet<>();
         List<BlockPos> poses = new ArrayList<>();
         Stack<BlockPos> stack = new Stack<>();
         stack.push(startPos);
 
-        // Start DFS
         while (!stack.isEmpty()) {
             BlockPos currentPos = stack.pop();
 
-            // Skip if already visited
             if (visited.contains(currentPos)) {
                 continue;
             }
 
-            // Mark the current position as visited
             visited.add(currentPos);
 
-            // Check if the current block matches the required type
             if (!world.getBlockState(currentPos).isOf(this.asBlock())) {
                 continue;
             }
 
-            // Add to the list of poses
             poses.add(currentPos);
 
-            // Add neighboring positions to the stack for further exploration
             for (int dx = -1; dx <= 1; dx++) {
                 for (int dy = -1; dy <= 1; dy++) {
                     for (int dz = -1; dz <= 1; dz++) {
-                        // Skip the current block itself
                         if (dx == 0 && dy == 0 && dz == 0) {
                             continue;
                         }
 
-                        // Calculate neighboring position
                         BlockPos neighborPos = currentPos.add(dx, dy, dz);
 
-                        // Skip if already visited
                         if (!visited.contains(neighborPos)) {
                             stack.push(neighborPos);
                         }
