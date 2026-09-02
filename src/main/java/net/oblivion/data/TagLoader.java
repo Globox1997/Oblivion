@@ -33,10 +33,22 @@ public class TagLoader {
                     ironWood.add(entry.getKey());
                 }
             }
+            FabricTagBuilder silverBirchWood = getOrCreateTagBuilder(TagInit.SILVER_BIRCH_WOOD);
+            for (Map.Entry<Block, Integer> entry : BlockInit.WOOD_BLOCKS.entrySet()) {
+                if (entry.getValue() == 1) {
+                    silverBirchWood.add(entry.getKey());
+                }
+            }
             FabricTagBuilder runeWood = getOrCreateTagBuilder(TagInit.RUNE_WOOD);
             for (Map.Entry<Block, Integer> entry : BlockInit.WOOD_BLOCKS.entrySet()) {
                 if (entry.getValue() == 2) {
                     runeWood.add(entry.getKey());
+                }
+            }
+            FabricTagBuilder hardWood = getOrCreateTagBuilder(TagInit.HARDWOOD);
+            for (Map.Entry<Block, Integer> entry : BlockInit.WOOD_BLOCKS.entrySet()) {
+                if (entry.getValue() == 3) {
+                    hardWood.add(entry.getKey());
                 }
             }
             FabricTagBuilder pickaxeMineable = getOrCreateTagBuilder(BlockTags.PICKAXE_MINEABLE);

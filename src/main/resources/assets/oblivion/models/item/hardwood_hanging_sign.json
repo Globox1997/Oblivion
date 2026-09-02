@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "oblivion:item/hardwood_hanging_sign"
+  }
+}

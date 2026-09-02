@@ -4,7 +4,7 @@
   "group": "wooden_fence",
   "key": {
     "#": {
-      "item": "minecraft:stick"
+      "item": "oblivion:rune_wood_stick"
     },
     "W": {
       "item": "oblivion:rune_wood_planks"

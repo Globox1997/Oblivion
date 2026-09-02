@@ -19,8 +19,12 @@ public class ItemMixin {
         if (stack.isIn(ItemTags.AXES)) {
             if (state.isIn(TagInit.IRON_WOOD)) {
                 info.setReturnValue(stack.isIn(TagInit.CORRECT_FOR_IRON_WOOD));
+            } else if (state.isIn(TagInit.SILVER_BIRCH_WOOD)) {
+                info.setReturnValue(stack.isIn(TagInit.CORRECT_FOR_SILVER_BIRCH_WOOD));
             } else if (state.isIn(TagInit.RUNE_WOOD)) {
                 info.setReturnValue(stack.isIn(TagInit.CORRECT_FOR_RUNE_WOOD));
+            } else if (state.isIn(TagInit.HARDWOOD)) {
+                info.setReturnValue(stack.isIn(TagInit.CORRECT_FOR_HARDWOOD));
             }
         }
     }

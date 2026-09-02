@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "oblivion:hardwood_log",
+    "oblivion:hardwood",
+    "oblivion:stripped_hardwood_log",
+    "oblivion:stripped_hardwood"
+  ]
+}

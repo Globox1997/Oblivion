@@ -1,0 +1,16 @@
+{
+  "variants": {
+    "axis=x": {
+      "model": "oblivion:block/hardwood",
+      "x": 90,
+      "y": 90
+    },
+    "axis=y": {
+      "model": "oblivion:block/hardwood"
+    },
+    "axis=z": {
+      "model": "oblivion:block/hardwood",
+      "x": 90
+    }
+  }
+}

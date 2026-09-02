@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "powered=false": {
+      "model": "oblivion:block/hardwood_pressure_plate"
+    },
+    "powered=true": {
+      "model": "oblivion:block/hardwood_pressure_plate_down"
+    }
+  }
+}

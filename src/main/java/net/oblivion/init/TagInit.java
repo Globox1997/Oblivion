@@ -19,11 +19,21 @@ public class TagInit {
     public static final TagKey<Block> INCORRECT_FOR_SOLARITE_TOOL = TagKey.of(RegistryKeys.BLOCK, OblivionMain.identifierOf("incorrect_for_solarite_tool"));
     public static final TagKey<Block> NEEDS_SOLARITE_TOOL = TagKey.of(RegistryKeys.BLOCK, OblivionMain.identifierOf("needs_solarite_tool"));
 
+    public static final TagKey<Block> IRON_WOOD_LOGS = TagKey.of(RegistryKeys.BLOCK, OblivionMain.identifierOf("iron_wood_logs"));
     public static final TagKey<Block> IRON_WOOD = TagKey.of(RegistryKeys.BLOCK, OblivionMain.identifierOf("iron_wood"));
     public static final TagKey<Item> CORRECT_FOR_IRON_WOOD = TagKey.of(RegistryKeys.ITEM, OblivionMain.identifierOf("correct_for_iron_wood"));
 
+    public static final TagKey<Block> SILVER_BIRCH_LOGS = TagKey.of(RegistryKeys.BLOCK, OblivionMain.identifierOf("silver_birch_logs"));
+    public static final TagKey<Block> SILVER_BIRCH_WOOD = TagKey.of(RegistryKeys.BLOCK, OblivionMain.identifierOf("silver_birch_wood"));
+    public static final TagKey<Item> CORRECT_FOR_SILVER_BIRCH_WOOD = TagKey.of(RegistryKeys.ITEM, OblivionMain.identifierOf("correct_for_silver_birch_wood"));
+
+    public static final TagKey<Block> RUNE_LOGS = TagKey.of(RegistryKeys.BLOCK, OblivionMain.identifierOf("rune_wood_logs"));
     public static final TagKey<Block> RUNE_WOOD = TagKey.of(RegistryKeys.BLOCK, OblivionMain.identifierOf("rune_wood"));
     public static final TagKey<Item> CORRECT_FOR_RUNE_WOOD = TagKey.of(RegistryKeys.ITEM, OblivionMain.identifierOf("correct_for_rune_wood"));
+
+    public static final TagKey<Block> HARDWOOD_LOGS = TagKey.of(RegistryKeys.BLOCK, OblivionMain.identifierOf("hardwood_logs"));
+    public static final TagKey<Block> HARDWOOD = TagKey.of(RegistryKeys.BLOCK, OblivionMain.identifierOf("hardwood"));
+    public static final TagKey<Item> CORRECT_FOR_HARDWOOD = TagKey.of(RegistryKeys.ITEM, OblivionMain.identifierOf("correct_for_hardwood"));
 
     public static final TagKey<Item> GOBLIN_HOLDABLE = TagKey.of(RegistryKeys.ITEM, OblivionMain.identifierOf("goblin_holdable"));
 

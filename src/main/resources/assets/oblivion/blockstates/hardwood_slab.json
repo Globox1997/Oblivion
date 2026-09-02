@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "oblivion:block/hardwood_slab"
+    },
+    "type=double": {
+      "model": "oblivion:block/hardwood_planks"
+    },
+    "type=top": {
+      "model": "oblivion:block/hardwood_slab_top"
+    }
+  }
+}

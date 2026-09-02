@@ -20,6 +20,7 @@ public class WorldInit {
     public static final FoliagePlacerType<SlimTreeFoliagePlacer> SLIM_TREE_FOLIAGE_PLACER = register("slim_tree_foliage_placer", SlimTreeFoliagePlacer.CODEC);
     public static final FoliagePlacerType<IronTreeFoliagePlacer> IRON_TREE_FOLIAGE_PLACER = register("iron_tree_foliage_placer", IronTreeFoliagePlacer.CODEC);
     public static final FoliagePlacerType<RuneTreeFoliagePlacer> RUNE_TREE_FOLIAGE_PLACER = register("rune_tree_foliage_placer", RuneTreeFoliagePlacer.CODEC);
+    public static final FoliagePlacerType<HardwoodTreeFoliagePlacer> HARDWOOD_TREE_FOLIAGE_PLACER = register("hardwood_tree_foliage_placer", HardwoodTreeFoliagePlacer.CODEC);
 
     public static final Feature<OblivionOreFeatureConfig> OBLIVION_ORE = register("oblivion_ore", new OblivionOreFeature(OblivionOreFeatureConfig.CODEC));
     public static final Feature<QuicksandFeatureConfig> QUICKSAND = register("quicksand", new QuicksandFeature(QuicksandFeatureConfig.CODEC));
