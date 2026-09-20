@@ -1,6 +1,7 @@
 ### Added:
 - 
 ### Fixed:
-- Fixed leave drops
+- leave drops
+- tool material compat
 ### Changed:
 - 
