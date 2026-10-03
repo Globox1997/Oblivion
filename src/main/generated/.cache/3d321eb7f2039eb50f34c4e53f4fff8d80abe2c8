@@ -1,4 +1,4 @@
-// 1.21.1	2026-10-01T21:53:48.8759862	Oblivion/Model Definitions
+// 1.21.1	2026-10-03T16:24:36.2831238	Oblivion/Model Definitions
 1a959dcb565176fe0ab415d1ca0e57808d5c86b2 assets\oblivion\models\item\boar_meat.json
 774b17fd30ffd0b4d45df61e1fc64ab98917de75 assets\oblivion\models\item\solarite_hoe.json
 e19e39c65ef99f39818ecc58d7c43ce9a573bd8f assets\oblivion\models\item\elysian_bone.json
@@ -57,6 +57,7 @@ fc0a197e9f8ea1104431d7d720a757e1c87b7751 assets\oblivion\blockstates\shimmering_
 e8aa362f5c765667abac19a8c89250c99a3594cc assets\oblivion\models\item\solarite_leggings.json
 264e37c5f2ec78299cc0201576cfeeceb3a25ff7 assets\oblivion\models\item\solarite_ingot.json
 20a3d3bcab25a3b7fbfa9c5cddc616276a802d29 assets\oblivion\models\item\scarlet_upgrade_smithing_template.json
+63ec6c618a3a23eab4cab9c52d7d3250de9b516e assets\oblivion\models\item\spawn_mossy_cow.json
 189435a4a2e5c331cadd4871f81442a9a3121848 assets\oblivion\models\item\scarlet_sword.json
 6775fb09c63c31da8edd066f486a9c319c3d0e0e assets\oblivion\models\item\cooked_turkey.json
 79a6c4f5a5b24ed21acb39086b8d4c64664e1c3d assets\oblivion\blockstates\fiery_netherite_block.json

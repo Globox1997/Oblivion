@@ -1,10 +1,10 @@
-// 1.21.1	2026-10-01T21:53:48.8739854	Oblivion/Tags for minecraft:block
+// 1.21.1	2026-10-03T16:24:36.2806065	Oblivion/Tags for minecraft:block
 172d7db0ff39c8cc98aa5c33fc4a43645469e423 data\minecraft\tags\block\mineable\shovel.json
-2b70b663bb18062712e4fbe9813f20bb487ff506 data\oblivion\tags\block\silver_birch_wood.json
+aa8618ac2ecc9cca5577b4a70b7a89fb6abd1f6a data\oblivion\tags\block\silver_birch_wood.json
 6b494241d6fe27479caa83056e8fef3366269913 data\minecraft\tags\block\mineable\pickaxe.json
-457a6d4f53fea2063eb2cf0392e7c38cb958b048 data\oblivion\tags\block\hardwood.json
-04446ff98338902d6e69235af04a9626844a49c7 data\minecraft\tags\block\mineable\axe.json
+0e8e68c32b19fc0e700314cef2dbe477a9711b7b data\oblivion\tags\block\hardwood.json
+05b620734e422177c9724926e414dfc00385ece2 data\minecraft\tags\block\mineable\axe.json
 1dfad3b14711128a8896cc7ad7d4d300a7e02923 data\minecraft\tags\block\animals_spawnable_on.json
-30782fca93037f493b4548994215ef29e6f2eedc data\oblivion\tags\block\iron_wood.json
+5a54c1ff362ce8e1113094c30ef8f29f27d7e37e data\oblivion\tags\block\iron_wood.json
 1dfad3b14711128a8896cc7ad7d4d300a7e02923 data\minecraft\tags\block\dirt.json
-cc0b1e45d4f16fc1ab9fd98852f61d44e2c0a69e data\oblivion\tags\block\rune_wood.json
+8c916bb7bbd875513e050b1dbb785140e6bf4777 data\oblivion\tags\block\rune_wood.json

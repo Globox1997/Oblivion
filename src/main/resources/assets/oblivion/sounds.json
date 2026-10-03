@@ -221,5 +221,31 @@
     "sounds": [
       "oblivion:elysian_elk_death_1"
     ]
+  },
+  "mossy_cow_idle": {
+    "sounds": [
+      "oblivion:mossy_cow_idle_1",
+      "oblivion:mossy_cow_idle_2",
+      "oblivion:mossy_cow_idle_3"
+    ]
+  },
+  "mossy_cow_hurt": {
+    "sounds": [
+      "oblivion:mossy_cow_hurt_1",
+      "oblivion:mossy_cow_hurt_2",
+      "oblivion:mossy_cow_hurt_3"
+    ]
+  },
+  "mossy_cow_death": {
+    "sounds": [
+      "oblivion:mossy_cow_death_1",
+      "oblivion:mossy_cow_death_2",
+      "oblivion:mossy_cow_death_3"
+    ]
+  },
+  "mossy_cow_step": {
+    "sounds": [
+      "oblivion:mossy_cow_step_1"
+    ]
   }
 }

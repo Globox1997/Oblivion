@@ -76,6 +76,12 @@
     "axolotls": [],
     "creature": [
       {
+        "type": "oblivion:mossy_cow",
+        "maxCount": 2,
+        "minCount": 2,
+        "weight": 8
+      },
+      {
         "type": "oblivion:wooly_cow",
         "maxCount": 4,
         "minCount": 4,

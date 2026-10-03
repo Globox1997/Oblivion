@@ -54,6 +54,11 @@ public class SoundInit {
     public static SoundEvent ELYSIAN_ELK_HURT_EVENT = register("elysian_elk_hurt");
     public static SoundEvent ELYSIAN_ELK_DEATH_EVENT = register("elysian_elk_death");
 
+    public static SoundEvent MOSSY_COW_IDLE_EVENT = register("mossy_cow_idle");
+    public static SoundEvent MOSSY_COW_HURT_EVENT = register("mossy_cow_hurt");
+    public static SoundEvent MOSSY_COW_DEATH_EVENT = register("mossy_cow_death");
+    public static SoundEvent MOSSY_COW_STEP_EVENT = register("mossy_cow_step");
+
     private static SoundEvent register(String id) {
         return Registry.register(Registries.SOUND_EVENT, id, SoundEvent.of(OblivionMain.identifierOf(id)));
     }
