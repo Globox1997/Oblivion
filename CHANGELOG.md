@@ -1,7 +1,6 @@
 ### Added:
-- 
+- Shimmering tall grass
 ### Fixed:
-- leave drops
-- tool material compat
+- 
 ### Changed:
 - 

@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/tinted_cross",
+  "textures": {
+    "cross": "oblivion:block/shimmering_tall_grass_top"
+  }
+}

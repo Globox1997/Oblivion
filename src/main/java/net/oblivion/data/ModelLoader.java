@@ -30,6 +30,8 @@ public class ModelLoader extends FabricModelProvider {
         Identifier identifier2 = blockStateModelGenerator.createSubModel(BlockInit.SHIMMERING_GRASS, "_lit", Models.CROSS, TextureMap::cross);
         blockStateModelGenerator.blockStateCollector.accept(VariantsBlockStateSupplier.create(BlockInit.SHIMMERING_GRASS).coordinate(BlockStateModelGenerator.createBooleanModelMap(Properties.LIT, identifier2, identifier)));
         blockStateModelGenerator.registerItemModel(BlockInit.SHIMMERING_GRASS);
+
+        blockStateModelGenerator.registerDoubleBlock(BlockInit.SHIMMERING_TALL_GRASS, BlockStateModelGenerator.TintType.TINTED);
     }
 
     @Override

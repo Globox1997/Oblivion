@@ -72,6 +72,7 @@ public class RenderInit {
         BlockEntityRendererFactories.register(BlockInit.GUIDELIGHT_BLOCK_ENTITY, GuidelightBlockEntityRenderer::new);
 
         BlockRenderLayerMap.INSTANCE.putBlock(BlockInit.SHIMMERING_GRASS, RenderLayer.getCutout());
+        BlockRenderLayerMap.INSTANCE.putBlock(BlockInit.SHIMMERING_TALL_GRASS, RenderLayer.getCutout());
 
         BlockRenderLayerMap.INSTANCE.putBlock(BlockInit.OBLIVION_SHORT_GRASS, RenderLayer.getCutout());
         BlockRenderLayerMap.INSTANCE.putBlock(BlockInit.OBLIVION_TALL_GRASS, RenderLayer.getCutout());
